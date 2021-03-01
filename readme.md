@@ -19,4 +19,4 @@ Thank you for considering contributing to the CoRA project! The contribution gui
 If you discover a security vulnerability within CoRA application, please send an e-mail to Sachin Pawaskar at spawaskar@unomaha.edu. All security vulnerabilities will be promptly addressed.
 
 ## License
-The CoRA application is intended to be open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The CoRA application is intended to be open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
