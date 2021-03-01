@@ -1,0 +1,14 @@
+@extends('layouts.app')
+
+@section('title', config('app.name', 'CoRA')." ".$heading)
+
+@section('content')
+    <v-row align="center" justify="center">
+        <v-col cols="12" class="m-0 p-0">
+            @include('common.errors')
+            @include('common.flash')
+{{--                    @include ('skeletalelements.components.highlights', $skeletalelement)--}}
+            @yield('association-content')
+        </v-col>
+    </v-row>
+@endsection

@@ -1,0 +1,24 @@
+version: 2.1
+orbs:
+  newman: postman/newman@0.0.2
+jobs:
+  Specimens-collection-run:
+    executor: newman/postman-newman-docker
+    steps:
+      - checkout
+      - newman/newman-run:
+          collection: ./tests/postman/api/SpecimensFinal.postman_collection.json
+          environment: ./tests/postman/api/environments/Testing.postman_environment.json
+  Dna-collection-run:
+    executor: newman/postman-newman-docker
+    steps:
+      - checkout
+      - newman/newman-run:
+          collection: ./tests/postman/api/DNA_Final.postman_collection.json
+          environment: ./tests/postman/api/environments/Testing.postman_environment.json
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - Specimens-collection-run
+      - Dna-collection-run

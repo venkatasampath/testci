@@ -1,0 +1,1 @@
+Vue.component('file-import', require('./fileImport').default);

@@ -1,0 +1,15 @@
+# Ignoring files with .slugignore
+# If your repository contains files not necessary to run your app,
+# you may wish to add these to a .slugignore file in the root of your repository.
+#
+# Examples of files you may wish to exclude from the slug:
+# 1. Art sources (like .psd files)
+# 2. Design documents (like .pdf files)
+#
+# The .slugignore file causes files to be removed after you push code to Heroku and before the buildpack runs.
+# This lets you prevent large files from being included in the final slug
+#
+# Your slug size is displayed at the end of a successful compile after the Compressing message.
+# The maximum allowed slug size (after compression) is 500 MB.
+/docs
+/docs/media
